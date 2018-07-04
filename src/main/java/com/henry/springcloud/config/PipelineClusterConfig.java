@@ -1,4 +1,4 @@
-package com.gaiaworks.springcloud.config;
+package com.henry.springcloud.config;
 
 import java.util.HashSet;
 import java.util.Set;

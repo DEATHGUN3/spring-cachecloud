@@ -2,6 +2,5 @@ spring:
   redis:
     cluster:
       nodes:
-        
 server:
   port: 8080

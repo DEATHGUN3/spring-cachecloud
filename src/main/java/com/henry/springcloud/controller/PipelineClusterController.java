@@ -1,4 +1,4 @@
-package com.gaiaworks.springcloud.controller;
+package com.henry.springcloud.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -38,6 +38,12 @@ public class PipelineClusterController {
 		return mset;
 	}
 	
+	@PostMapping("msetnx")
+	public Long msetnx(@RequestBody String... arg0) {
+		Long msetnx = pipelineCluster.msetnx(arg0);
+		return msetnx;
+	}
+	
 	@PostMapping("mget")
 	public Map<String, String> mget(@RequestBody List<String> keys) {
 		
@@ -50,6 +56,7 @@ public class PipelineClusterController {
 	public void mget2(@RequestBody String... key) {
 		List<String> mget = pipelineCluster.mget(key);
 		System.out.println(mget);
+		
 	}
 	
 	@DeleteMapping("mdel")

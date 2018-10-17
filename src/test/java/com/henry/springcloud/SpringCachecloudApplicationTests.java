@@ -1,4 +1,4 @@
-package com.gaiaworks.springcloud;
+package com.henry.springcloud;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
